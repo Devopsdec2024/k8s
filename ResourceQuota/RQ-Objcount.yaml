@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: object-counts
+  namespace: qa
+spec:
+  hard:
+    pods: "10"
+    services: "5"
+    configmaps: "20"
+    secrets: "15"
+
+
+---
+
+
+From the above yaml file;
+* Max 10 Pods, 5 Services, 20 ConfigMaps, and 15 Secrets in the qa namespace.
+

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: storage-class-quota
+  namespace: apps
+spec:
+  hard:
+    basic.storageclass.storage.k8s.io/requests.storage: "900Gi" 
+    fast.storageclass.storage.k8s.io/requests.storage: "200Gi"
+
+
+----
+
+
+* The above yaml file will restrict usage of the "basic" Storage Class to 900Gi and usage of the "fast" Storage Class to 200Gi
