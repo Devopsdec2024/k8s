@@ -1,0 +1,11 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: efs-sc-dyn
+provisioner: efs.csi.aws.com
+parameters:
+  fileSystemId: fs-02843f4199c68bcd2
+  provisioningMode: efs-ap
+  directoryPerms: "700"
+  gidRangeStart: "1000"
+  gidRangeEnd: "2000"
