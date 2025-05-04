@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: devops-ns
+  labels:
+    team: DevopsTeam
+
+
+---
+
+* From the above yaml file, the name of the namespace will be “devops-ns” and the key-value pair will be “team: DevopsTeam”
+
+
+

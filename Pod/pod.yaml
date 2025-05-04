@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkins-container
+  labels:
+    app: jenkins
+spec:
+  containers:
+    - name: jenkins-container
+      image: jenkins/jenkins:latest
